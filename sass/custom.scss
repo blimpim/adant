@@ -1,0 +1,242 @@
+
+// Custom.scss
+$font-family-base: Montserrat;
+$primary:   white;
+$secondary: #1E1E1E;
+$success:   #F77E3D;
+$accordion-color: $primary;
+
+
+
+$font-size-base: 16px;
+$font-size-base: 1rem;
+$headings-line-height: 1.25;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer ,
+  2: $spacer * 1.25,
+  3: $spacer * 1.875,
+  4: $spacer * 2.5,
+  5: $spacer * 3.75,
+  6: $spacer * 5,
+  7: $spacer * 6.25,
+  8: $spacer * 7.5
+);
+
+
+$h1-font-size:                $font-size-base * 6;
+$h2-font-size:                $font-size-base * 4.5;
+$h3-font-size:                $font-size-base * 3;
+$h4-font-size:                $font-size-base * 2;
+$h5-font-size:                $font-size-base * 1.5;
+$h6-font-size:                $font-size-base * 1.25;
+
+
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.125;
+
+$border-radius:               0.625rem;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+body {
+    background-image: url('../assets/Gradient.png');   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+   }
+
+section {
+    overflow: visible;
+}
+
+
+
+@media screen and (min-width: 577px){
+
+    .main_section {
+        background-image: url('../assets/back_main_v.png');   
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: right;
+        padding-right: 0%;
+        
+    }
+
+    .card-reviews{
+        min-width: 614px;
+        height: 500px;
+        background: linear-gradient(270deg, rgba(217, 217, 217, 0.15) 0%, rgba(217, 217, 217, 0) 157.57%);
+        box-shadow: inset -2px 0px 4px rgba(188, 188, 188, 0.1);
+        border-radius: 20px;  
+    }
+
+    .contact_btn {
+        background-image: url('../assets/Pin.svg');   
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        border: 1px solid #F77E3D;
+        border-radius: 10px;
+    };
+    
+    .contact_btn:hover {
+        background-image: url('../assets/Pin_hover.svg');   
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        transition-timing-function: ease-in-out;
+        transition: 1s;
+        border: 1px solid #F77E3D;
+        border-radius: 10px;
+    };
+
+    #tel_nav_icon{
+        background-image: url('../assets/tel_nav_icon.png'); 
+        
+    }
+
+    #LOGO{
+        filter: drop-shadow(0px 0px 50px #DA5D1A) drop-shadow(0px 0px 5px #F7803D);
+    height: 100px;
+    }
+};
+
+@media screen and (max-width: 576px){
+    .desciption_mob{
+        background: linear-gradient(90deg, rgba(103, 103, 103, 0.1) 0%, rgba(255, 255, 255, 0) 112.29%);
+        box-shadow: inset -2px -2px 2px rgba(188, 188, 188, 0.3);
+        backdrop-filter: blur(25px);
+        border-radius: 10px;
+       
+
+    }
+    .main_section {
+        background-image: url('../assets/back_main_v.png') ;   
+        background-repeat: no-repeat;
+        
+        height: 110vh; 
+        background-position: top 80px right -200px;
+        
+    }
+
+    .card-reviews{
+       
+        min-width: 310px;
+        height: 500px;
+        background: linear-gradient(270deg, rgba(217, 217, 217, 0.15) 0%, rgba(217, 217, 217, 0) 157.57%);
+                          box-shadow: inset -2px 0px 4px rgba(188, 188, 188, 0.1);
+                          border-radius: 20px;  
+    }
+
+    .contact_btn {
+        background: rgba(41, 35, 32, 0.3);
+        border: 1px solid #F77E3D;
+        border-radius: 10px;
+    };
+    
+    .contact_btn:hover {
+        background: rgba(41, 35, 32, 0.3);
+        border: 1px solid #F77E3D;
+        border-radius: 10px;
+    };
+
+    #tel_nav_icon{
+        background-image: url('../assets/tel_nav_icon.png'); 
+        
+    }
+
+    #LOGO{
+        filter: drop-shadow(0px 0px 50px #DA5D1A) drop-shadow(0px 0px 5px #F7803D);
+        height: 70px;
+    }
+
+};
+
+
+
+.main_page{
+    height: 100vh;
+    overflow: visible;
+};
+
+.container-fluid { 
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+    color: inherit;
+    text-decoration: none;
+  };
+
+.remove_button_css { 
+    border: 0px; 
+    box-sizing: none; 
+    background-color: transparent; 
+  }
+
+.modal-backdrop {
+    opacity:0.9 !important;
+}
+
+#scroll_reviews {
+    flex: none;
+    height: 500px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    user-select: none;
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none
+    
+}
+#scroll_reviews.active {
+    
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
+
+#scroll_reviews::-webkit-scrollbar{
+    display: none;
+}
+
+#footer {
+    background-image: url('../assets/Gradient_footer.png');   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    background: rgba(81, 81, 81, 0.3);                  
+    border: 1px solid #F77E3D;
+    border-radius: 10px;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
